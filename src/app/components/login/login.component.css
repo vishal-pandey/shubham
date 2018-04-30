@@ -1,4 +1,4 @@
- @media screen and (max-width: 431px) {
+@media screen and (max-width: 431px) {
 
     .form{
       width: 90% !important;
@@ -29,15 +29,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  body{
-    /*background-image: url('');*/
-    background-image: url();
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color:#464646;
-  }
+  
 
 
   .head_of_form{

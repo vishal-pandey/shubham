@@ -1,0 +1,22 @@
+.navbar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 0px !important;
+    background: white;
+  }
+
+  .navbar a{
+  color: #9e4eef !important;
+  font-size: 15px;
+  }
+
+  .navbar-brand{
+    font-size: 27px !important;
+    font-weight: bold;
+  }
+
+  .navbar-toggle{
+    background: black;
+  }
