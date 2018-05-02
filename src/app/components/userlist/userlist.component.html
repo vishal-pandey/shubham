@@ -1,0 +1,32 @@
+ <div class="Container">
+
+<section class="custom_container">
+  <div class="head">User Details</div>
+
+<section *ngFor="let user of users"> 
+  <section class="custom_section1"  *ngIf="user.userid">
+    <div class="columns col-md-3 col-sm-4 col-xs-4">
+      <div id="project_id"><b>User Id : </b>{{user.userid}} </div>
+    </div>
+  
+    <div class="columns col-md-7 col-sm-8 col-xs-8">
+      <div id="project_name"><b>User Name : </b>{{user.username}} </div>
+    </div>
+  
+    <div class="columns col-md-2 col-sm-12 col-xs-12">
+      <button mat-raised-button style="margin: 0!important;" routerLink="/projectlist/{{user.userid}}">Details</button>
+      <!-- <div id="project_progress">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar"
+        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        40%
+        </div>
+      </div>
+      </div> -->
+    </div>
+  </section>
+</section>
+
+
+</section>
+</div>

@@ -1,0 +1,33 @@
+	<div class="Container">
+    <section *ngIf="loading" class="loader">
+      <mat-spinner color="accent"></mat-spinner>
+    </section>
+
+    <section class="custom_container" *ngIf="!loading">
+      <div class="head">Project Details</div>
+      <section class="custom_section1">
+      <div class="columns col-md-6 col-sm-12">
+        <input type="text" class="form-control" id="project_name" placeholder="Project Name" #pname>
+        <input type="text" class="form-control" id="project_mgr" placeholder="Project Incharge" #inchargename>
+        <input type="text" class="form-control" id="project_mgr_contact" placeholder="Contact Number of Project Incharge" #inchargecontact>
+    	
+      </div>
+      <div class="columns col-md-6 col-sm-12">
+    	
+
+      <input type="text" class="form-control" id="project_start_date" placeholder="Project Start Date" #startdate>
+        <input type="text" class="form-control" id="project_end_date" placeholder="Project End Date" #enddate>
+
+        <input type="text" class="form-control" id="project_task_number" placeholder="Number Of Tasks" #notask>
+    	
+    	
+      </div>
+    </section>
+
+    <section class="custom_section1">
+      <div class="columns col-md-12 col-sm-12">
+      <button type="button" class="btn btn-success" (click)="addProject(pname.value, inchargename.value, inchargecontact.value, startdate.value, enddate.value, notask.value) ">Submit</button>
+      </div>
+    </section>
+    </section>
+  </div>

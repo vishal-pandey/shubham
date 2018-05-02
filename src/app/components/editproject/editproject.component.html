@@ -1,0 +1,56 @@
+<section class="container">
+	<section class="main">
+		<mat-toolbar class="hTool" *ngIf="theProject.pname">Project Name : {{theProject.pname}}</mat-toolbar>
+		<section class="details">
+			<div class="sdate"><b>Start Date : </b> {{theProject.startdate}}</div>
+			<div class="edate"><b>End Date : </b> {{theProject.enddate}}</div>
+			<div class="incharge"><b>Project Incharge : </b> {{theProject.inchargename}}</div>
+			<div class="contact"><b>Contact No. : </b> {{theProject.inchargecontact}}</div>
+		</section>
+		<section class="tasks">
+			<div class="title">
+				<h3><u>Tasks</u></h3>
+			</div>
+
+			<div *ngFor="let task of tasks">
+				<div class="theTask" *ngIf="task.tname">
+					<span class="taskName">{{task.tname}}</span>
+					<span class="status">
+						<button mat-raised-button *ngIf="task.progress == '0'" (click)="completeTask(task.tid)">Complete</button>
+						<button mat-raised-button *ngIf="task.progress == '1'" color="primary" (click)="uncompleteTask(task.tid)">Completed</button>
+					</span>
+				</div>
+			</div>
+			<div class="addTask">
+				Add Task <button mat-mini-fab color="primary" (click)="addTask(theProject.pid)">+</button>
+			</div>
+		</section>
+		<!-- <section class="images">
+			<div class="title">
+				<h3><u>Project Images</u></h3>
+			</div>
+			<section class="imageContainer">
+				<div class="theImg" *ngFor="let url of theProject.pImages">
+					<img src="{{url}}">
+				</div>
+			</section>
+		</section> -->
+		<section class="comments">
+			<div class="title">
+				<h3><u>Comments</u></h3>
+			</div>
+			<div class="commentContainer">
+				<div *ngFor="let comment of comments">
+					<div class="theComment" *ngIf="comment.comment">
+					<span class="avatar"><mat-icon>perm_identity</mat-icon> <b> Master Vishal</b></span>
+					<span>{{comment.comment}}</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<br>
+		<br>
+		<br>
+	</section>
+</section>

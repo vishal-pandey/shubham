@@ -1,0 +1,40 @@
+<section class="container">
+	<section class="main">
+		<mat-toolbar class="hTool">
+			<div><mat-icon>perm_identity</mat-icon> &nbsp;&nbsp;&nbsp;{{masterUser.username}}</div>
+			
+			<div class="userDetails">
+				<span><b>Position :</b> {{masterUser.position}}</span>
+				<span><b>Contact :</b> {{masterUser.contact}}</span>
+			</div>
+		</mat-toolbar>
+		<mat-toolbar class="projectCount">
+			<span class="total">Totlal Projects: {{projects.totalProj}} </span>
+			<span class="completed">Completed Projects: {{projects.completedProj}} </span>
+			<span class="ongoing">Ongoing Projects: {{projects.ongoingProj}} </span>
+			<span class="halted">Halted Projects: {{projects.haltedProj}} </span>
+		</mat-toolbar>
+		<section class="projectList">
+		
+			<div class="theProject tableHeader">
+				<span class="name">Project Name</span>
+				<span class="startdate">Start Date</span>
+				<span class="enddate">End Date</span>
+				<span class="tasks">Total Task</span>
+				<span class="incharge">Project Incharge</span>
+				<span class="contact">Contact No.</span>
+				<span class="detail"><button mat-button>Details</button></span>
+			</div>
+		
+			<div class="theProject" *ngFor="let project of projectList">
+				<span class="name">{{project.pname}}</span>
+				<span class="startdate">{{project.sdate}}</span>
+				<span class="enddate">{{project.edate}}</span>
+				<span class="tasks">Task {{count(project.tasks)}}</span>
+				<span class="incharge">{{project.pIncharge}}</span>
+				<span class="contact">{{project.iContact}}</span>
+				<span class="detail"><button mat-raised-button routerLink="/project/{{project.id}}">Details</button></span>
+			</div>
+		</section>
+	</section>
+</section>

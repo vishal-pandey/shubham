@@ -1,3 +1,4 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 body{
     background-image: url("https://raw.githubusercontent.com/vishal-pandey/shubham/master/src/assets/bg.jpg");
   background-position: center center;
@@ -6,3 +7,12 @@ body{
   background-size: cover;
   background-color:#464646;
   }
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}

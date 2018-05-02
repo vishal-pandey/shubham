@@ -1,0 +1,132 @@
+.projectProgress{
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/*flex-direction: column;*/
+}
+.container{
+	width: 100%;
+	/*background-color: rgb(240,240,240);*/
+}
+.main{
+	max-width: 1124px;
+	min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hTool{
+	background-color: #FF9800;
+	color: #004D40;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: auto;
+	min-height: 50px;
+}
+.details{
+	width: 100%;
+	padding: 20px;
+	border: 1px solid rgb(240,240,240);
+}
+.details div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	border: 1px solid rgb(240,240,240);
+}
+.sdate{
+	color: #4CAF50;
+}
+.edate{
+	color: #F44336;
+}
+.incharge{
+	color: #9C27B0;
+}
+.contact{
+	color: #2196F3;
+}
+
+.tasks{
+	width: 100%;
+	border: 1px solid rgb(240,240,240);
+}
+.theTask{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border-bottom: 1px solid rgb(240,240,240);
+
+}
+.pindicator{
+	height: 20px;
+}
+.theTask span{
+	width: 50%;
+	text-align: center;
+	padding: 20px;
+}
+.title{
+	width: 100%;
+	text-align: center;
+}
+
+.images{
+	width: 100%;
+	padding: 20px;	
+}
+.imageContainer{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.theImg{
+	width: 250px;
+	height: 250px;
+}
+.theImg img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.commentContainer{
+	width: 100%;
+	padding: 20px;
+}
+.theComment{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border: 1px solid rgb(240,240,240);
+	padding: 10px;
+}
+.avatar{
+	min-width: 150px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	/*justify-content: flex-start;*/
+
+}
+.commentbox{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px solid rgb(240,240,240); 
+	padding: 20px;
+}
+.commentInput{
+	width: 90%;
+}

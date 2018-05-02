@@ -1,0 +1,84 @@
+.container{
+	width: 100%;
+	/*background-color: rgb(240,240,240);*/
+}
+.main{
+	max-width: 1124px;
+	min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hTool{
+	background-color: #FF9800;
+	color: #004D40;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: auto;
+}
+/*.fill{
+	flex: 1 1 auto;
+}*/
+.userDetails{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 16px;
+
+	/*border: 1px solid black;*/
+}
+
+.projectCount{
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	height: auto;
+	min-height: 40px;
+}
+
+.total{
+	color: #0D47A1;
+}
+.completed{
+	color: #4CAF50;
+}
+
+.ongoing{
+	color: #00BCD4;
+}
+
+.halted{
+	color: #E65100;
+}
+
+.projectList{
+	padding: 20px;
+}
+.theProject{
+	width: 100%;
+	border: 1px solid rgb(240, 240, 240);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin-top: 10px;
+}
+.theProject span{
+	width: 14%;
+}
+@media screen and (max-width: 768px) {
+	.userDetails{
+		align-items: flex-end;
+		width: 100%;
+	}
+	.theProject span{
+		width: 100%;
+		text-align: center;
+	}
+}

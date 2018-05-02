@@ -4,9 +4,9 @@
     <h2>Login</h2>
   </div>
   <div class="input_fields">
-    <div><input type="text" name="" value="" class="form-control" placeholder="User ID"></div>
-    <div><input type="password" name="" value="" class="form-control" placeholder="Password"></div>
-    <div><button type="button" class="btn btn-success">Login</button></div>
+    <div><input type="text" name="" value="" class="form-control" placeholder="User ID" #userid></div>
+    <div><input type="password" name="" value="" class="form-control" placeholder="Password" #password></div>
+    <div><button type="button" class="btn btn-success"(click)="login(userid.value, password.value)">Login</button></div>
   </div>
 </section>
 </div>
